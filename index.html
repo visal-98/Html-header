@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <title>Digital Merit Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo">
+            <div class="header-text">
+                <div class="blink"></div>
+                <h3>Welcome to</h3>
+                <h1>DIGITAL MERIT MEDIA</h1>
+                <span class="square"></span>
+                <p>You've come to the right place if you're a company owner or marketing executive and you're looking
+                    for an amazing and enthusiastic partner to help you develop your business, from plan development to
+                    implementation and continuous optimization. Blue Corona helps businesses improve web leads and
+                    sales, distinguish their products and optimize their brands.</p>
+                <button class="common-btn">KNOW MORE</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------navigation------->
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+<!-----------about----------->
+<section id="about">
+    <div class="about-left-col">
+        <img src="images/about.png">
+    </div>
+    <div class="about-right-col"></div>
+</section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        
+        sideNav.style.right = "-250px"
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0px";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+           
+    </script>
+</body>
+
+</html>
